@@ -4,6 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 build("Solution");
+		build("Testv1");
             }
         }
         stage('Test') {
