@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                build("Solution");
+                build("Solution", config:"release");
 		build("Testv1");
             }
         }
